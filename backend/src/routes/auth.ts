@@ -91,7 +91,7 @@ router.get('/messages/:otherId', async (req, res) => {
 
     const token = authHeader.split(' ')[1];
     try {
-        const decoded = jwt.verify(token, JWT_SECRET as string) as any;
+        const decoded = jwt.verify(token as any, JWT_SECRET) as any;
         const myId = decoded.userId;
 
         const messages = await prisma.message.findMany({
@@ -121,7 +121,7 @@ router.delete('/messages/:otherId', async (req, res) => {
 
     const token = authHeader.split(' ')[1];
     try {
-        const decoded = jwt.verify(token, JWT_SECRET as string) as any;
+        const decoded = jwt.verify(token as any, JWT_SECRET) as any;
         const myId = decoded.userId;
 
         await prisma.message.deleteMany({
@@ -146,7 +146,7 @@ router.delete('/user', async (req, res) => {
 
     const token = authHeader.split(' ')[1];
     try {
-        const decoded = jwt.verify(token, JWT_SECRET as string) as any;
+        const decoded = jwt.verify(token as any, JWT_SECRET) as any;
         const myId = decoded.userId;
 
         // Delete all messages sent or received by the user
