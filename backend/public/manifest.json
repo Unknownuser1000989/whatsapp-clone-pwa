@@ -1,0 +1,35 @@
+{
+    "name": "WhatsApp Clone Professional",
+    "short_name": "WA Clone",
+    "description": "Real-time, cross-platform private messaging application.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#00a884",
+    "categories": [
+        "communication",
+        "social"
+    ],
+    "icons": [
+        {
+            "src": "https://cdn-icons-png.flaticon.com/512/733/733585.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "https://cdn-icons-png.flaticon.com/512/733/733585.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide"
+        }
+    ]
+}
